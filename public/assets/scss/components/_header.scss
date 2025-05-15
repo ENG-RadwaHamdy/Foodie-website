@@ -1,0 +1,70 @@
+
+
+// Mixins
+@mixin hover-effect {
+  transition-duration: 0.4s;
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+// Shared Styles
+.header {
+  &__system-bar {
+    background-color: var(--header-bg-dark) !important;
+  }
+
+  &__main-bar {
+    background-color: var(--header-bg-dark) !important;
+  }
+
+  &__title{
+    min-width: 200px !important;
+    @media (max-width: 960px) {
+      min-width: 70px!important;
+    }
+  }
+  &__bottom-bar {
+    background-color: var(--header-bg-darker) !important;
+  }
+
+  &__search-card {
+    background-color: var(--search-bg) !important;
+    @media (max-width: 960px) {
+      width: 100%;
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+  }
+
+  &__nav-link {
+    @include hover-effect;
+  }
+
+  &__phone-btn {
+    background-color: var(--accent-color) !important;
+  }
+  &__user-actions {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 1rem;
+
+      &:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 50px;
+        width: 2px;
+        background-color: rgba(255, 255, 255, 0.12);
+      }
+  }
+}
+
+.mobile-menu{
+  top: 120px !important;
+  height: calc(100% - 120px)!important;
+  background-color: var(--header-bg-dark)!important;
+}

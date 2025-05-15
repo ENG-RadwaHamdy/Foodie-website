@@ -2,9 +2,9 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: 'Anon',
+      title: 'Foodie',
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+        { rel: 'icon', type: 'image/x-icon', href: '/p1.webp' }
       ]
     }
   },
@@ -33,11 +33,15 @@ export default defineNuxtConfig({
     "vuetify/styles",
   ],
 
-  components: [
-    {
-      path: "~/components",
-    },
-  ],
+  components: {
+    dirs: [
+      {
+        path: '~/components',
+        pathPrefix: false,
+        global: true
+      }
+    ]
+  },
 
   modules: ["@nuxtjs/i18n", "@pinia/nuxt", "@vee-validate/nuxt"],
 
