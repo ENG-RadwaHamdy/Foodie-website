@@ -1,0 +1,52 @@
+.v-text-field {
+  .v-field {
+    &__input {
+      color: white !important;
+      
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+    
+    &__outline {
+      --v-field-border-opacity: 1;
+      color: white !important;
+    }
+
+    &--error {
+      .v-field__outline {
+        color: white !important; 
+        opacity: 1;
+      }
+    }
+
+    &--variant-outlined {
+      .v-field__outline {
+        border-color: white;
+      }
+    }
+  }
+
+  .v-label {
+    color: white !important;
+  }
+
+  // Error message styling
+  .v-messages {
+    color: rgb(var(--v-theme-error));
+    font-size: 0.875rem;
+    min-height: 20px;
+    padding-top: 4px;
+  }
+}
+
+// Checkbox styling
+.v-checkbox {
+  .v-label {
+    color: white !important;
+  }
+
+  .v-selection-control__input {
+    color: white !important;
+  }
+}

@@ -2,6 +2,8 @@
 @use './variables';
 @use 'components/header';
 @use 'components/home';
+@use 'components/login-register';
+@use 'components/auth-form';
 
 body {
   font-family: 'Inter', sans-serif;

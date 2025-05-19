@@ -56,7 +56,7 @@
       <div class="d-none d-md-flex align-center">
         <div v-for="(action, index) in userActions" :key="index" class="header__user-actions">
           <span class="ml-4 text-caption">{{ action.label }}</span>
-          <v-btn :append-icon="action.icon" class="header__nav-link">
+          <v-btn rounded="0" :append-icon="action.icon" class="header__nav-link" :to="action.to">
             {{ action.text }}
           </v-btn>
         </div>
@@ -110,8 +110,8 @@ const socialIcons = ['facebook', 'instagram', 'pinterest', 'twitter', 'linkedin'
 const mobileMenu = ref(false)
 
 const userActions = [
-  { label: 'My favourite', text: 'Wishlist', icon: 'mdi mdi-heart-outline' },
-  { label: 'Login/Signup', text: 'My account', icon: 'mdi mdi-lock-open-outline' }
+  { label: 'My favourite', text: 'Wishlist', icon: 'mdi mdi-heart-outline' ,to:"/wishlist"  },
+  { label: 'Login/Signup', text: 'My account', icon: 'mdi mdi-lock-open-outline', to:"/login-register" }
 ]
 
 const navigationLinks = [

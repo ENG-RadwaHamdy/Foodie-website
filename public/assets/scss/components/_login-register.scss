@@ -1,0 +1,38 @@
+// Login Register Page Styles
+.login-register {
+    &__container {
+      min-height: 100vh;
+    }
+  
+    &__card {
+      &--rounded-bl {
+        border-bottom-left-radius: 300px !important;
+        @media (max-width: 960px) {
+          border-bottom-left-radius: 0 !important;
+        }
+      }
+  
+      &--rounded-br {
+        border-bottom-right-radius: 300px !important;
+        @media (max-width: 960px) {
+          border-bottom-right-radius: 0 !important;
+        }
+      }
+    }
+  
+    &__logo {
+      transition: transform 0.3s ease;
+      
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  
+    &__social-buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      margin-bottom: 4rem;
+    }
+  }

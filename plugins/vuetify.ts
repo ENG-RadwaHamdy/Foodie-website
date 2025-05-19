@@ -17,7 +17,7 @@ const myCustomLightTheme: ThemeDefinition = {
   dark: false,
   colors: {
     primary: '#2F2F2F', 
-    secondary: '#5CBBF6', 
+    secondary: '#1F1F1F', 
   },
 }
 

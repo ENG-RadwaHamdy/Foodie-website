@@ -12,7 +12,7 @@
     </div>
     <div class=" d-flex w-100 bgMidum px-4 pb-10">
 <v-row>
-  <v-col col="12" sm="3">
+  <v-col col="12" sm="4">
     <h4 class="mt-2">Connect With us</h4>
     <span class="text-caption">Facebook</span><br>
     <span class="text-caption">Twitter</span><br>
@@ -21,7 +21,7 @@
     <span class="text-caption">Youtube</span><br>
     <span class="text-caption">Pinterest</span>
   </v-col>
-  <v-col col="12" sm="3">
+  <v-col col="12" sm="4">
     <h4 class="mt-2">More About Store</h4>
     <span class="text-caption">Multiple Branches</span><br>
     <span class="text-caption">Take Franchise</span><br>
@@ -30,7 +30,7 @@
     <span class="text-caption">Meet Our Team</span><br>
     <span class="text-caption">More Links</span>
   </v-col>
-  <v-col col="12" sm="3">
+  <v-col col="12" sm="4">
     <h4 class="mt-2">Offline Store</h4>
     <span class="text-caption">Address :3548 Columbia</span><br>
     <span class="text-caption">Wheeling, West Virginia</span><br>
@@ -38,10 +38,6 @@
     <span class="text-caption">Contact: 304-559-3029</span><br>
     <span class="text-caption">304-650-2694</span><br>
     <span class="text-caption">Email: email@gmail.com</span>
-  </v-col>
-  <v-col col="12" sm="3">
-    <h4 class="mt-2">Location</h4>
-    <v-img src="/map.webp" height="150" class="ml-n16"></v-img>
   </v-col>
 </v-row>
     </div>
