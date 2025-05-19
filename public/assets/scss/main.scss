@@ -1,6 +1,7 @@
 @use './fonts';
 @use './variables';
 @use 'components/header';
+@use 'components/home';
 
 body {
   font-family: 'Inter', sans-serif;

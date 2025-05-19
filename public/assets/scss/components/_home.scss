@@ -1,0 +1,31 @@
+.dark-background {
+    background-color: #1f1f1f !important;
+}
+
+.dark-secondary-background {
+    background-color: #2f2f2f !important;
+}
+
+.category-list {
+    background-color: #1f1f1f !important;
+    color: white !important;
+}
+
+.tag-item {
+    &:hover {
+        color: orange !important;
+    }
+}
+
+.dark-button {
+    background-color: #111111 !important;
+}
+
+.card-overlay {
+    align-items: center !important;
+    bottom: 0 !important;
+    justify-content: center !important;
+    opacity: 0.9 !important;
+    position: absolute !important;
+    width: 100% !important;
+}
